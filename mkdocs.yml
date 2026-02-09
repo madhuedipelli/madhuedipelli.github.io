@@ -1,0 +1,25 @@
+site_name: DSA & System Design Daily Log
+
+repo_url: https://github.com/madhuedipelli/madhuedipelli.github.io
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - content.code.copy
+    - navigation.top
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - DSA:
+    - Overview: dsa/index.md
+  - System Design:
+    - Overview: system-design/index.md
+
+plugins:
+  - search
+  - minify
