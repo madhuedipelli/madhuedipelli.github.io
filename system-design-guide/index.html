@@ -1,0 +1,1548 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Complete SDE interview prep with DSA, System Design, and interview guide insights">
+      
+      
+        <meta name="author" content="Madhu Edipelli">
+      
+      
+      
+        <link rel="prev" href="../dsa-guide/">
+      
+      
+        <link rel="next" href="../timelines/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>System Design - SDE Interview Prep 2026</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#system-design-interview-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SDE Interview Prep 2026" class="md-header__button md-logo" aria-label="SDE Interview Prep 2026" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SDE Interview Prep 2026
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              System Design
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/madhuedipelli" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SDE Interview Prep 2026" class="md-nav__button md-logo" aria-label="SDE Interview Prep 2026" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SDE Interview Prep 2026
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/madhuedipelli" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interview Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dsa-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Design
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-7-system-design-gotchas-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 7 System Design Gotchas to Avoid
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-premature-component-specification-most-common" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1️⃣ Premature Component Specification ⭐ MOST COMMON
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-the-free-lunch-fallacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2️⃣ The Free Lunch Fallacy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-not-calculating-capacity-causes-wrong-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3️⃣ Not Calculating Capacity ⭐ CAUSES WRONG DESIGN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-missing-non-functional-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4️⃣ Missing Non-Functional Requirements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ignoring-failure-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5️⃣ Ignoring Failure Scenarios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5️⃣ Ignoring Failure Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network Partition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replica-lag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replica Lag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cascading-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cascading Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Loss
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-not-discussing-tradeoffs-explicitly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6️⃣ Not Discussing Tradeoffs Explicitly
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-not-justifying-each-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7️⃣ Not Justifying Each Component
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-design-study-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Design Study Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Design Study Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-study-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Study Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-questions-to-ask-yourself" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Questions to Ask Yourself
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Timelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checklists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklists
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice-diary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practice Diary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repositories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Repositories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/dsa" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/system-design" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/java-concurrency-spring" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/Spring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-7-system-design-gotchas-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 7 System Design Gotchas to Avoid
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-premature-component-specification-most-common" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1️⃣ Premature Component Specification ⭐ MOST COMMON
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-the-free-lunch-fallacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2️⃣ The Free Lunch Fallacy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-not-calculating-capacity-causes-wrong-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3️⃣ Not Calculating Capacity ⭐ CAUSES WRONG DESIGN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-missing-non-functional-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4️⃣ Missing Non-Functional Requirements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ignoring-failure-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5️⃣ Ignoring Failure Scenarios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5️⃣ Ignoring Failure Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network Partition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replica-lag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Replica Lag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cascading-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cascading Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Loss
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-not-discussing-tradeoffs-explicitly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6️⃣ Not Discussing Tradeoffs Explicitly
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-not-justifying-each-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7️⃣ Not Justifying Each Component
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-design-study-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Design Study Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Design Study Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-study-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Study Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-questions-to-ask-yourself" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Questions to Ask Yourself
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="system-design-interview-guide">📖 System Design Interview Guide</h1>
+<h2 id="the-7-system-design-gotchas-to-avoid">The 7 System Design Gotchas to Avoid</h2>
+<p>Based on comprehensive analysis of "You Suck At Coding Interviews" guide.</p>
+<hr />
+<h2 id="1-premature-component-specification-most-common">1️⃣ Premature Component Specification ⭐ MOST COMMON</h2>
+<p><strong>Failure Pattern:</strong></p>
+<pre><code>Interviewer: &quot;How would you scale Twitter?&quot;
+You: &quot;We'll use MongoDB, Redis, Nginx, Kafka, Cassandra...&quot;
+Interviewer: &quot;Why MongoDB?&quot;
+You: &quot;Because... it scales?&quot;
+Interviewer: ❌ FAIL
+</code></pre>
+<p><strong>Root Cause:</strong> Tech stack memorization, not reasoning</p>
+<p><strong>Why It Happens:</strong> 
+- You've heard MongoDB used at scale
+- Don't understand WHY it was chosen
+- Can't defend your choice when questioned</p>
+<p><strong>Fix:</strong> Start with PROBLEM characteristics, then JUSTIFY tech choice</p>
+<p><strong>Correct Pattern:</strong></p>
+<pre><code>❌ &quot;We need MongoDB&quot;
+
+✅ &quot;We need to store non-relational data with horizontal scaling.
+   MongoDB provides this by sacrificing consistency for availability.
+   Trade-off: eventual consistency acceptable for tweets,
+   critical for follower list (use relational here)&quot;
+</code></pre>
+<p><strong>The Framework:</strong>
+1. <strong>Problem:</strong> Define constraints (DAU, QPS, storage)
+2. <strong>Need:</strong> What characteristic solves this? (consistency? horizontal scale? fast reads?)
+3. <strong>Technology:</strong> Which tech provides this? (justify)
+4. <strong>Trade-off:</strong> What are we sacrificing? (name it)</p>
+<p><strong>Example:</strong></p>
+<pre><code>Problem: 500M tweets/month, 100K QPS, read-heavy (100:1 ratio)
+Need: Horizontal scaling, fast reads, eventual consistency OK
+Technology: Cassandra (distributed, read-optimized)
+Trade-off: No powerful queries, eventual consistency
+
+NOT &quot;Cassandra is cool&quot; - that fails immediately
+</code></pre>
+<hr />
+<h2 id="2-the-free-lunch-fallacy">2️⃣ The Free Lunch Fallacy</h2>
+<p><strong>Myth:</strong> "NoSQL scales better than SQL"</p>
+<p><strong>Truth:</strong> NoSQL trades consistency/joins for scale - no magic</p>
+<p><strong>Reality Check:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>MySQL</th>
+<th>NoSQL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Joins</td>
+<td>✅ Fast, powerful</td>
+<td>❌ Complex, app-level</td>
+</tr>
+<tr>
+<td>horizontal scale</td>
+<td>⚠️ Hard (sharding)</td>
+<td>✅ Built-in</td>
+</tr>
+<tr>
+<td>Consistency</td>
+<td>✅ Strong</td>
+<td>❌ Eventual</td>
+</tr>
+<tr>
+<td>ACID</td>
+<td>✅ Yes</td>
+<td>❌ Varies</td>
+</tr>
+<tr>
+<td>Simplicity</td>
+<td>✅ SQL predictable</td>
+<td>❌ Schema-less surprises</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Your Takeaway:</strong> EVERY choice costs something. Name the cost.</p>
+<p><strong>Interview Example:</strong></p>
+<pre><code>You: &quot;Let's use NoSQL for everything, it scales better&quot;
+Interviewer: &quot;What if we need to transfer money between accounts?&quot;
+You: &quot;...that needs ACID transactions&quot;
+Interviewer: &quot;NoSQL ✗ ACID ✗ Trade-off ✗&quot;
+
+Better:
+You: &quot;NoSQL for user timeline (eventual consistency OK)
+SQL for transactions (need ACID)
+Reason: NoSQL scales horizontally, SQL has strong guarantees&quot;
+</code></pre>
+<p><strong>Common Free Lunch Beliefs:</strong>
+- ❌ "Cache makes everything fast" → Cache misses, invalidation complexity
+- ❌ "Microservices solve scalability" → Network latency, distributed tracing
+- ❌ "Multiple databases = best solution" → Operational complexity, debugging nightmares</p>
+<hr />
+<h2 id="3-not-calculating-capacity-causes-wrong-design">3️⃣ Not Calculating Capacity ⭐ CAUSES WRONG DESIGN</h2>
+<p><strong>What Fails:</strong> Design without numbers</p>
+<p><strong>Example:</strong></p>
+<pre><code>Interviewer: &quot;Design YouTube&quot;
+You: &quot;Multiple servers, load balancer, cache, database&quot;
+Interviewer: &quot;How many servers?&quot;
+You: &quot;Uh... as many as needed?&quot;
+Interviewer: ❌ FAIL
+</code></pre>
+<p><strong>Why Numbers Matter:</strong> Wrong capacity → completely different architecture</p>
+<p><strong>Example Calculation:</strong></p>
+<pre><code>500M URLs created/month
+÷ 30 days ÷ 86,400 seconds = 200 writes/sec
+
+100:1 read/write ratio = 20,000 reads/sec
+
+Each URL entry: 500 bytes average
+
+3 years retention:
+  500M URLs/month × 36 months = 18B total URLs
+  18B URLs × 500 bytes = 9,000,000,000,000 bytes = 9TB
+
+Storage conclusion: 9TB requires SHARDING
+Write throughput: 200/sec fine on single server
+Read throughput: 20K/sec needs multiple replicas/caches
+</code></pre>
+<p><strong>Your Action:</strong> ALWAYS calculate these FIRST:</p>
+<ol>
+<li><strong>DAU (Daily Active Users)</strong></li>
+<li>1M DAU? 100M DAU? 1B DAU?</li>
+<li>
+<p>Completely different scale</p>
+</li>
+<li>
+<p><strong>QPS (Queries Per Second)</strong></p>
+</li>
+<li>Calculation: DAU × avg requests/user ÷ 86,400 seconds</li>
+<li>
+<p>Makes capacity clear</p>
+</li>
+<li>
+<p><strong>Storage</strong></p>
+</li>
+<li>Calculation: QPS × avg data size × retention period</li>
+<li>
+<p>Determines: single server vs sharding vs archival</p>
+</li>
+<li>
+<p><strong>Bandwidth</strong></p>
+</li>
+<li>Calculation: QPS × avg data size</li>
+<li>Determines: network, API gateway capacity</li>
+</ol>
+<p><strong>Complete Calculations for URL Shortener:</strong></p>
+<pre><code>DAU: 1M users
+Avg URLs created: 10/day
+QPS: 1M × 10 ÷ 86,400 = 115 writes/sec
+Read/write ratio: 100:1 = 11,500 reads/sec
+
+Storage per URL:
+- Short code: 7 bytes
+- Long URL: 1KB
+- Metadata: 100 bytes
+- Total: ~1.1KB
+
+Yearly storage: 115 writes/sec × 86,400 sec × 365 days × 1.1KB
+= 115 × 86,400 × 365 × 1.1KB = 3.6TB/year
+
+5-year retention: 18TB (needs sharding? probably not at this scale)
+</code></pre>
+<p><strong>Design Impact:</strong>
+- 115 writes/sec → single DB server fine (can handle 1000s)
+- 11,500 reads/sec → need caching + replicas
+- 18TB → if using single drive, archive old data</p>
+<hr />
+<h2 id="4-missing-non-functional-requirements">4️⃣ Missing Non-Functional Requirements</h2>
+<p><strong>What Most Candidates Do:</strong> Only plan functional (create, read, delete)</p>
+<p><strong>What You Must Do:</strong> Also define NFRs</p>
+<p><strong>Non-Functional Requirements:</strong>
+- <strong>Latency:</strong> How fast must response time be?
+- <strong>Availability/SLA:</strong> What's acceptable downtime? (99%, 99.9%, 99.99%)
+- <strong>Consistency Model:</strong> Strong? Eventual? Causal?
+- <strong>Throughput:</strong> Requests/second targets?</p>
+<p><strong>Example Failure:</strong></p>
+<pre><code>Candidate: &quot;We store URLs in database, cache in Redis&quot;
+Interviewer: &quot;If Redis dies?&quot;
+Candidate: &quot;Use the database...&quot;
+Interviewer: &quot;Latency impact?&quot;
+Candidate: &quot;It will be slow?&quot;
+
+Interviewer: &quot;By how much? 1s? 10s? 1m?&quot;
+Candidate: &quot;I don't know?&quot;
+Interviewer: ❌ FAIL - No latency SLA defined
+</code></pre>
+<p><strong>Better Approach:</strong></p>
+<pre><code>&quot;Our latency SLA: p99 &lt; 100ms
+If Redis dies:
+  - Fallback to database (slower, ~500ms)
+  - Degrade: show cached version if available
+  - Alert: page on-call to rebuild Redis (RTO 5 min)
+  - This keeps p99 &lt; 500ms temporarily&quot;
+</code></pre>
+<p><strong>NFR Examples Per System:</strong></p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Latency SLA</th>
+<th>Availability</th>
+<th>Consistency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Twitter</td>
+<td>p99 &lt; 100ms</td>
+<td>99.9%</td>
+<td>Eventual</td>
+</tr>
+<tr>
+<td>Uber</td>
+<td>p99 &lt; 50ms</td>
+<td>99.95%</td>
+<td>Strong</td>
+</tr>
+<tr>
+<td>Gmail</td>
+<td>p99 &lt; 1s</td>
+<td>99.99%</td>
+<td>Strong</td>
+</tr>
+<tr>
+<td>Analytics</td>
+<td>p99 &lt; 1m</td>
+<td>95%</td>
+<td>Eventual</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-ignoring-failure-scenarios">5️⃣ Ignoring Failure Scenarios</h2>
+<p><strong>Problem:</strong> Your design works when everything is fine. Fails under chaos.</p>
+<p><strong>Common Failures:</strong></p>
+<h3 id="network-partition">Network Partition</h3>
+<pre><code>Problem: Server A can't reach Server B
+Question: Timeout? Retry? Failover?
+
+Design flaw: 
+  You: &quot;Server A waits for Server B response forever&quot;
+  → Cascading failure
+
+Better:
+  You: &quot;1-second timeout, after 3 retries → failover to backup&quot;
+</code></pre>
+<h3 id="replica-lag">Replica Lag</h3>
+<pre><code>Problem: Write on primary, read from stale replica
+Question: How old is acceptable?
+
+Design flaw:
+  You: &quot;Just replicate, don't worry about lag&quot;
+  → User writes comment, reads stale feed (comment missing)
+
+Better:
+  You: &quot;For read-after-write: read-through-primary
+       For other reads: eventual consistency (&lt; 1s lag)
+       Monitor and alert if lag &gt; threshold&quot;
+</code></pre>
+<h3 id="cascading-failures">Cascading Failures</h3>
+<pre><code>Problem: Service A slow → timeouts → Service B backed up
+        → Thread pool exhausted → Service B fails
+        → Service C can't call B → Service C fails
+
+Design flaw: No circuit breakers, no bulkheads
+
+Better:
+  Circuit breaker: If B fails, C stops calling B immediately
+  Bulkhead: Limit threads per downstream service
+  Timeout: Short timeout so C doesn't wait forever
+</code></pre>
+<h3 id="data-loss">Data Loss</h3>
+<pre><code>Problem: Hard drive fails, data lost
+Question: Do you have replicas? Backups? How many?
+
+Design flaw:
+  You: &quot;Just use the database&quot;
+  → One server dies, all data gone
+
+Better:
+  You: &quot;3-replica Cassandra cluster (replication factor 3)
+       Nightly snapshots to S3
+       RTO 5 minutes, RPO 1 hour&quot;
+</code></pre>
+<p><strong>Your Mitigation Strategy (per failure type):</strong>
+- <strong>Timeouts:</strong> Kill slow requests
+- <strong>Circuit Breakers:</strong> Stop calling failed services
+- <strong>Fallbacks:</strong> Use cache, degraded service, backup
+- <strong>Monitoring:</strong> Alert on errors, latency
+- <strong>Redundancy:</strong> Multiple replicas, multiple datacenters</p>
+<hr />
+<h2 id="6-not-discussing-tradeoffs-explicitly">6️⃣ Not Discussing Tradeoffs Explicitly</h2>
+<p><strong>Failure:</strong> Propose solution, move on.</p>
+<p><strong>Success:</strong> State what you're sacrificing for each choice.</p>
+<p><strong>Interview Example:</strong></p>
+<pre><code>You: &quot;I'd use hash-based sharding&quot;
+Interviewer: &quot;Tradeoffs?&quot;
+You: &quot;Uh... none?&quot;
+Interviewer: ❌ FAIL - Every choice has costs
+
+Better:
+You: &quot;I'd use hash-based sharding for even distribution.
+     Trade-off: redistribution is expensive if cluster grows.
+     Benefit: no hot shards in normal operation.
+     Monitoring: watch for hot shards, if detected → migrate to directory-based.&quot;
+</code></pre>
+<p><strong>Sharding Strategy Example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Pro</th>
+<th>Con</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hash-Based</strong></td>
+<td>Distributes evenly</td>
+<td>Expensive rebalance</td>
+<td>Initial deployment</td>
+</tr>
+<tr>
+<td><strong>Range-Based</strong></td>
+<td>Easy to add servers</td>
+<td>Uneven distribution (hot range)</td>
+<td>When ranges skew predictable</td>
+</tr>
+<tr>
+<td><strong>Directory-Based</strong></td>
+<td>Handles uneven</td>
+<td>Directory becomes bottleneck</td>
+<td>When many hot shards</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Your Approach:</strong></p>
+<pre><code>Initial: Hash-based sharding
+  - Assumption: even distribution
+  - Monitoring: track shard sizes
+
+If observation: &quot;Shard 3 has 60% of data&quot;
+  - Root cause: hash function poor or data skewed
+  - Decision: Migrate to directory-based
+  - Justification: &quot;Accept directory overhead for uniform distribution&quot;
+</code></pre>
+<p><strong>Always State Trade-offs Like:</strong>
+1. "I'm trading [cost A] for [benefit B]"
+2. "Assumption: [X condition holds]"
+3. "Monitoring alert: [Y metric becomes bad]"
+4. "If [Y happens], migrate to: [backup plan]"</p>
+<hr />
+<h2 id="7-not-justifying-each-component">7️⃣ Not Justifying Each Component</h2>
+<p><strong>Failure:</strong> "Load balancer, API gateway, queue, cache, database..."</p>
+<p><strong>Reality:</strong> Many candidates can't justify each one</p>
+<p><strong>You Must Be Able To Explain:</strong></p>
+<pre><code>WHY load balancer? (1 sentence)
+WHY API gateway? (1 sentence)
+WHY queue? (1 sentence)
+</code></pre>
+<p><strong>Correct Framework:</strong></p>
+<pre><code>Problem → Solution → Component (justified)
+
+PROBLEM: 1M users, single server can handle 10K QPS max
+SOLUTION: Distribute load across multiple servers
+COMPONENT: Load balancer ✅
+JUSTIFICATION: &quot;Routes requests to available servers, handles failover&quot;
+
+
+PROBLEM: Different services (auth, tweets, feed) need different scales
+SOLUTION: Rate limit &amp; authenticate at entry point
+COMPONENT: API gateway ✅
+JUSTIFICATION: &quot;Centralized auth, rate limiting, request routing&quot;
+
+
+PROBLEM: Write spike (1M likes/sec) causes database lock
+SOLUTION: Buffer writes, process asynchronously
+COMPONENT: Queue (Kafka, RabbitMQ) ✅
+JUSTIFICATION: &quot;Decouples write spike from database, allows batch processing&quot;
+
+
+PROBLEM: Database queries take 500ms, users expect &lt; 100ms
+SOLUTION: Store frequently accessed data in fast memory
+COMPONENT: Redis cache ✅
+JUSTIFICATION: &quot;&lt; 5ms memory access vs 500ms disk access&quot;
+
+
+PROBLEM: Need durability &amp; consistency for transactions
+SOLUTION: Structured, ACID-compliant storage
+COMPONENT: Primary database (PostgreSQL) ✅
+JUSTIFICATION: &quot;Relational data with ACID guarantees&quot;
+</code></pre>
+<p><strong>Anti-Pattern:</strong></p>
+<pre><code>❌ &quot;We'll use Kafka because it's cool&quot;
+❌ &quot;Redis because Netflix uses it&quot;
+❌ &quot;Mongo because no Schema&quot;
+
+✅ &quot;Kafka because we need to decouple writes at scale&quot;
+✅ &quot;Redis because sub-100ms reads critical&quot;
+✅ &quot;Mongo because schema evolves independently per service&quot;
+</code></pre>
+<hr />
+<h2 id="system-design-study-strategy">System Design Study Strategy</h2>
+<h3 id="the-study-flow">The Study Flow</h3>
+<ol>
+<li><strong>Study Existing Solutions</strong> (Grokking: 15h)</li>
+<li>Understand patterns, not memorize</li>
+<li>
+<p>Focus on WHY, not HOW</p>
+</li>
+<li>
+<p><strong>Understand Theory</strong> (DDIA: 10h)</p>
+</li>
+<li>Read chapters on weak areas</li>
+<li>
+<p>Replication, partitioning, consistency</p>
+</li>
+<li>
+<p><strong>Reverse Engineer Real Systems</strong> (5h)</p>
+</li>
+<li>Design Twitter without reading solutions</li>
+<li>Design Uber from scratch</li>
+<li>
+<p>Compare to real implementations</p>
+</li>
+<li>
+<p><strong>Mock Interview</strong> (ongoing)</p>
+</li>
+<li>Practice talking through design</li>
+<li>Justify every choice</li>
+<li>Document tradeoffs</li>
+</ol>
+<h3 id="key-questions-to-ask-yourself">Key Questions to Ask Yourself</h3>
+<ul>
+<li>[ ] "Can I calculate capacity for this system?"</li>
+<li>[ ] "What are the NFRs?"</li>
+<li>[ ] "What's my sharding strategy? Why?"</li>
+<li>[ ] "How does it handle failures?"</li>
+<li>[ ] "What's my monitoring strategy?"</li>
+<li>[ ] "Have I justified every component?"</li>
+<li>[ ] "Have I stated all tradeoffs?"</li>
+</ul>
+<hr />
+<p><strong>Next Step:</strong> See <a href="../timelines/">Study Timelines</a> for benchmarks &gt;&gt;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

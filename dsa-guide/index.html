@@ -1,0 +1,1340 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Complete SDE interview prep with DSA, System Design, and interview guide insights">
+      
+      
+        <meta name="author" content="Madhu Edipelli">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../system-design-guide/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>DSA - SDE Interview Prep 2026</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dsa-interview-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SDE Interview Prep 2026" class="md-header__button md-logo" aria-label="SDE Interview Prep 2026" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SDE Interview Prep 2026
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DSA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/madhuedipelli" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SDE Interview Prep 2026" class="md-nav__button md-logo" aria-label="SDE Interview Prep 2026" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SDE Interview Prep 2026
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/madhuedipelli" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interview Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-7-dsa-gotchas-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 7 DSA Gotchas to Avoid
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-the-magic-bullet-trap-most-common" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1️⃣ The Magic Bullet Trap ⭐ MOST COMMON
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-not-testing-on-paper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2️⃣ Not Testing on Paper
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-speed-understanding-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3️⃣ Speed ≠ Understanding ⭐ CRITICAL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-only-memorizing-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4️⃣ Only Memorizing Solutions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-pattern-confusion-overlap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5️⃣ Pattern Confusion Overlap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-the-sliding-window-trap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6️⃣ The Sliding Window Trap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-skipping-edge-cases-in-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7️⃣ Skipping Edge Cases in Planning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dsa-study-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSA Study Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSA Study Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-four-step-problem-solving-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Four-Step Problem Solving Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-practice-diary-mandatory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Practice Diary (MANDATORY)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benchmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benchmarks
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-design-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Timelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checklists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklists
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice-diary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practice Diary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repositories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Repositories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/dsa" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/system-design" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/java-concurrency-spring" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/Spring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-7-dsa-gotchas-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 7 DSA Gotchas to Avoid
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-the-magic-bullet-trap-most-common" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1️⃣ The Magic Bullet Trap ⭐ MOST COMMON
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-not-testing-on-paper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2️⃣ Not Testing on Paper
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-speed-understanding-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3️⃣ Speed ≠ Understanding ⭐ CRITICAL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-only-memorizing-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4️⃣ Only Memorizing Solutions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-pattern-confusion-overlap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5️⃣ Pattern Confusion Overlap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-the-sliding-window-trap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6️⃣ The Sliding Window Trap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-skipping-edge-cases-in-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7️⃣ Skipping Edge Cases in Planning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dsa-study-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSA Study Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSA Study Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-four-step-problem-solving-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Four-Step Problem Solving Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-practice-diary-mandatory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Practice Diary (MANDATORY)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benchmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benchmarks
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="dsa-interview-guide">📖 DSA Interview Guide</h1>
+<h2 id="the-7-dsa-gotchas-to-avoid">The 7 DSA Gotchas to Avoid</h2>
+<p>Based on comprehensive analysis of "You Suck At Coding Interviews" guide.</p>
+<hr />
+<h2 id="1-the-magic-bullet-trap-most-common">1️⃣ The Magic Bullet Trap ⭐ MOST COMMON</h2>
+<p><strong>Problem:</strong> Jumping straight to optimal solution, failing when wrong, wasting 20+ minutes.</p>
+<p><strong>Why It Happens:</strong> Overconfidence + no fallback strategy</p>
+<p><strong>The Numbers:</strong>
+- Saves 5 minutes if optimal works
+- LOSES 20+ minutes if it fails
+- Net cost: -15 minutes</p>
+<p><strong>Fix:</strong> Always start naive → optimize incrementally → test baseline</p>
+<p><strong>Your Takeaway:</strong> In interview, propose naive first, get feedback, then optimize.</p>
+<p><strong>Example:</strong></p>
+<pre><code>❌ WRONG: &quot;I'll use two-pointers in O(n) time&quot;
+   → Realizes pointers need sorted input
+   → Spends 15 minutes reworking
+   → Rushes through solution
+   → Misses edge cases
+
+✅ RIGHT: &quot;I'll start with naive O(n²) brute force&quot;
+   → Interviewer confirms approach
+   → &quot;Good, now optimize?&quot;
+   → Proposes two-pointers with clear preconditions
+   → Has time to test edge cases
+</code></pre>
+<hr />
+<h2 id="2-not-testing-on-paper">2️⃣ Not Testing on Paper</h2>
+<p><strong>Problem:</strong> Algorithm works in your head but fails when you trace through it.</p>
+<p><strong>Why It Happens:</strong> Brains are terrible at precise mental computation with multiple variables</p>
+<p><strong>Real Example:</strong> Reversing linked list</p>
+<pre><code>Input: [4, 5, 1, 3, 2]
+Your head: &quot;Works in reverse!&quot;
+On paper: 
+  - Step 1: prev=null, current=4
+  - Step 2: next=5, 4.next=null
+  - Step 3: prev=4, current=5
+  - ...realizes you're overwriting pointers incorrectly
+</code></pre>
+<p><strong>Fix:</strong> BEFORE coding anything:
+1. Pick small input (3-4 elements)
+2. Draw state diagram
+3. Write every variable value per step
+4. Identify where logic breaks</p>
+<p><strong>Your Action:</strong> Must trace through 2-3 examples on paper EVERY TIME</p>
+<p><strong>Practice Tip:</strong> If it works on paper for 3 cases, you've caught 80% of bugs before coding</p>
+<hr />
+<h2 id="3-speed-understanding-critical">3️⃣ Speed ≠ Understanding ⭐ CRITICAL</h2>
+<p><strong>The Myth:</strong> "I can solve it if I have time"</p>
+<p><strong>The Reality:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Time Expected</th>
+<th>Your Autonomy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>L3</strong></td>
+<td>30+ minutes</td>
+<td>Learning</td>
+</tr>
+<tr>
+<td><strong>L4</strong></td>
+<td>15 minutes</td>
+<td>Competent</td>
+</tr>
+<tr>
+<td><strong>L5</strong></td>
+<td>3-5 minutes</td>
+<td>Expert</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The Truth:</strong> If not autonomous (3-5 min for L5), go back and redo</p>
+<p><strong>Example:</strong> If at 50 hours, still taking 20 min for easy problems:
+- Stop solving new problems
+- Re-study the pattern completely
+- Understand the preconditions
+- Then resume practice</p>
+<p><strong>Fix:</strong> Track time per problem, watch for improvement curve</p>
+<p><strong>Your Metric:</strong>
+- @5h: Easy ~15 min
+- @20h: Easy &lt; 10 min
+- @50h: Easy &lt; 5 min
+- @100h: Easy &lt; 2 min</p>
+<p><strong>Red Flag:</strong> If your times are staying flat or increasing, you're memorizing, not understanding</p>
+<hr />
+<h2 id="4-only-memorizing-solutions">4️⃣ Only Memorizing Solutions</h2>
+<p><strong>Problem:</strong> Watch/read solution, think you get it, move on. Can't apply to variations.</p>
+<p><strong>Why Fails:</strong> Memorized facts without underlying logic can't transfer to new contexts</p>
+<p><strong>The Numbers:</strong>
+- 20 deeply understood problems &gt; 100 memorized problems
+- Memorization fails when problem is 10% different
+- Understanding succeeds even with 50% variation</p>
+<p><strong>Fix:</strong> For EACH solution, reverse-engineer:</p>
+<ol>
+<li><strong>Problem Characteristics:</strong> What about this problem made this approach optimal?
+   ```
+   Example: Sliding window works because:</li>
+<li>Non-relational data (sum)</li>
+<li>Can reuse portion of previous result</li>
+<li>
+<p>Problem asks for subarray
+   ```</p>
+</li>
+<li>
+<p><strong>Inefficiencies in Naive:</strong> What was the inefficiency?
+   <code>Example: Naive = recalculate sum for every window
+   Inefficiency = O(n²) recalculation</code></p>
+</li>
+<li>
+<p><strong>Bridge:</strong> What insight connects naive to optimal?
+   <code>Example: If last window sum is known,
+   current window = last - left_element + right_element
+   Precondition: "contract then expand" window pattern</code></p>
+</li>
+</ol>
+<p><strong>Outcome:</strong> When you see a new problem:
+- Recognize preconditions first
+- THEN apply pattern
+- NOT: "This looks like the problem I memorized"</p>
+<hr />
+<h2 id="5-pattern-confusion-overlap">5️⃣ Pattern Confusion Overlap</h2>
+<p><strong>Problem:</strong> After learning many patterns, preconditions overlap and confuse you</p>
+<p><strong>Example Confusion:</strong></p>
+<pre><code>Two Pointers: When?
+Sliding Window: When?
+Binary Search: Which condition?
+BFS vs DFS: Which to use?
+</code></pre>
+<p><strong>Why Happens:</strong> Preconditions aren't explicit, they're implicit in examples</p>
+<p><strong>Fix:</strong> After learning new pattern, backtest against previous 5 problems</p>
+<p><strong>Process:</strong></p>
+<pre><code>New pattern: Sliding Window learned
+Your action: 
+  1. Take 5 previous problems
+  2. Would sliding window work?
+  3. Why or why not?
+  4. Write down precondition
+  5. Test this precondition on current pattern examples
+</code></pre>
+<p><strong>Your Timeline:</strong> Spend 30 min per new pattern on overlap checking</p>
+<p><strong>Red Flag:</strong> If confused on new pattern → You didn't understand old one</p>
+<p><strong>Document Template:</strong></p>
+<pre><code class="language-markdown">## Sliding Window Pattern
+**Precondition:** Non-relational data + can reuse portion
+
+✅ Works: Max sum subarray (reuse = remove left + add right)
+✅ Works: Longest substring (reuse = slide window)
+❌ Doesn't: Merge intervals (relational, changes per element)
+❌ Doesn't: LIS (position dependency too high)
+</code></pre>
+<hr />
+<h2 id="6-the-sliding-window-trap">6️⃣ The Sliding Window Trap</h2>
+<p><strong>Problem:</strong> Students memorize "use sliding window for subarrays" without understanding WHY</p>
+<p><strong>Root Cause:</strong> No formal CS education on this pattern exists in textbooks; must infer from examples</p>
+<p><strong>Fix:</strong> Learn the PRECONDITION first, NOT the name</p>
+<p><strong>Precondition:</strong> </p>
+<pre><code>&quot;Can we reuse a portion of the previous computation?&quot;
+
+YES → Consider sliding window
+NO → You need different approach
+</code></pre>
+<p><strong>In Your Prep:</strong> When learning sliding window, ask:
+- "Why does reusing the sum work?"
+- "What would break if data was relational?"
+- "What if we couldn't contract the window?"</p>
+<p><strong>Example Breakdown:</strong></p>
+<pre><code>Max Sum Subarray of size K
+
+❌ Naive: Recalculate sum each window - O(n²)
+   Why slow? Throwing away previous work
+
+✅ Sliding Window: Reuse sum - O(n)
+   Why fast? Remove leftmost, add rightmost
+
+Precondition met? 
+  &quot;Can we remove old data without affecting new?&quot; YES
+  &quot;Is order specific?&quot; NO
+  &quot;Can we parallel process?&quot; NO (sequential)
+
+✅ Sliding window valid
+</code></pre>
+<hr />
+<h2 id="7-skipping-edge-cases-in-planning">7️⃣ Skipping Edge Cases in Planning</h2>
+<p><strong>Problem:</strong> Code first, realize edge cases after</p>
+<p><strong>Cost:</strong>
+- Wasted coding time rewriting logic
+- Bugs that fail in interview
+- Panic and rush through solution</p>
+<p><strong>Fix:</strong> BEFORE coding, list all edge cases</p>
+<p><strong>Complete Edge Case Checklist:</strong></p>
+<pre><code class="language-markdown">## For every problem, check:
+
+### Input Size
+- [ ] Empty input ([], &quot;&quot;, 0)
+- [ ] Single element ([1], &quot;a&quot;, 1)
+- [ ] Two elements ([1,2], &quot;ab&quot;, 2)
+
+### Duplicates &amp; Repetition
+- [ ] All duplicates ([1,1,1])
+- [ ] Multiple duplicates (&quot;aabbaa&quot;)
+
+### Ordering
+- [ ] Already sorted ([1,2,3,4,5])
+- [ ] Reverse sorted ([5,4,3,2,1])
+- [ ] Random order
+
+### Values
+- [ ] All positive numbers
+- [ ] All negative numbers
+- [ ] Mix of positive/negative
+- [ ] Zeros present
+- [ ] Very large numbers (overflow?)
+- [ ] Very small numbers (underflow?)
+
+### Constraints
+- [ ] Min range (0 or 1?)
+- [ ] Max range (depends on memory)
+- [ ] Off-by-one boundaries (indices)
+
+### Special Cases (per problem)
+- [ ] [Your custom cases]
+</code></pre>
+<p><strong>Your Process:</strong>
+1. Read problem
+2. Generate edge cases (5 min)
+3. Test naive on paper (3 min)
+4. Test edge cases on paper (5 min)
+5. THEN code (much faster, fewer bugs)</p>
+<p><strong>Time Saved:</strong> 5-10 min of debugging in interview = huge confidence boost</p>
+<hr />
+<h2 id="dsa-study-strategy">DSA Study Strategy</h2>
+<p>Based on the guide, here's the proven approach:</p>
+<h3 id="the-four-step-problem-solving-method">The Four-Step Problem Solving Method</h3>
+<ol>
+<li><strong>Naive Solution (Baseline)</strong></li>
+<li>Always code something</li>
+<li>Even if O(n²), have a working solution</li>
+<li>
+<p>Builds confidence</p>
+</li>
+<li>
+<p><strong>Identify Inefficiency</strong></p>
+</li>
+<li>What's slow?</li>
+<li>Why is it slow?</li>
+<li>
+<p>Can it be reused?</p>
+</li>
+<li>
+<p><strong>Optimize</strong></p>
+</li>
+<li>Apply pattern</li>
+<li>Test preconditions</li>
+<li>
+<p>Implement</p>
+</li>
+<li>
+<p><strong>Test &amp; Refine</strong></p>
+</li>
+<li>Edge cases first</li>
+<li>Boundary conditions</li>
+<li>Trace on paper</li>
+</ol>
+<h3 id="the-practice-diary-mandatory">The Practice Diary (MANDATORY)</h3>
+<p>Every problem you solve, you must record:
+- Time spent
+- Mistakes made + root cause
+- Prevention steps
+- Related problems</p>
+<p>This is the difference between solving 100 problems and LEARNING from 50 problems.</p>
+<hr />
+<h2 id="benchmarks">Benchmarks</h2>
+<table>
+<thead>
+<tr>
+<th>Hour</th>
+<th>Milestone</th>
+<th>What You Can Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5h</td>
+<td>Starting</td>
+<td>Easy problems, heavy help needed</td>
+</tr>
+<tr>
+<td>20h</td>
+<td>Foundation</td>
+<td>Easy problems in &lt; 10 min</td>
+</tr>
+<tr>
+<td>50h</td>
+<td>Intermediate</td>
+<td>Easy/medium in &lt; 20 min, starting patterns</td>
+</tr>
+<tr>
+<td>80h</td>
+<td>Advanced</td>
+<td>Most mediums solvable, patterns clear</td>
+</tr>
+<tr>
+<td>100h</td>
+<td>Near Ready</td>
+<td>70% of 20 random problems on first try</td>
+</tr>
+<tr>
+<td>115h</td>
+<td>Ready</td>
+<td>Interview confident, thinking clearly</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Next Step:</strong> See <a href="../practice-diary/">Practice Diary</a> guide to structure your learning &gt;&gt;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

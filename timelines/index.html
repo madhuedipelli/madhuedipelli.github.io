@@ -1,0 +1,1888 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Complete SDE interview prep with DSA, System Design, and interview guide insights">
+      
+      
+        <meta name="author" content="Madhu Edipelli">
+      
+      
+      
+        <link rel="prev" href="../system-design-guide/">
+      
+      
+        <link rel="next" href="../checklists/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Timelines - SDE Interview Prep 2026</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#study-timelines-benchmarks" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SDE Interview Prep 2026" class="md-header__button md-logo" aria-label="SDE Interview Prep 2026" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SDE Interview Prep 2026
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Timelines
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/madhuedipelli" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SDE Interview Prep 2026" class="md-nav__button md-logo" aria-label="SDE Interview Prep 2026" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SDE Interview Prep 2026
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/madhuedipelli" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interview Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dsa-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-design-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Timelines
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Timelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dsa-study-timeline-115-hours-total" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSA Study Timeline: 115 Hours Total
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSA Study Timeline: 115 Hours Total">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-foundations-0-35-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Foundations (0-35 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-dp-mastery-35-50-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: DP Mastery (35-50 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-advanced-50-85-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Advanced (50-85 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-practice-interview-prep-85-115-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Practice &amp; Interview Prep (85-115 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dsa-benchmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSA Benchmarks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSA Benchmarks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-per-problem-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time Per Problem Level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-per-problem-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality Per Problem Level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-curve-typical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning Curve (Typical)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-design-timeline-30-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Design Timeline: 30+ Hours
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Design Timeline: 30+ Hours">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-study-solutions-0-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Study Solutions (0-15 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-understand-theory-15-25-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Understand Theory (15-25 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-reverse-engineer-25-30-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Reverse Engineer (25-30 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-interview-ready-30h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Interview Ready (30h+)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combined-study-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combined Study Schedule
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Combined Study Schedule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#month-1-dsa-foundations-system-design-intro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Month 1: DSA Foundations + System Design Intro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#month-2-dsa-dp-system-design-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Month 2: DSA DP + System Design Solutions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#month-3-dsa-advanced-system-design-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Month 3: DSA Advanced + System Design Theory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#month-4-dsa-practice-system-design-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Month 4: DSA Practice + System Design Practice
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benchmark-checkpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benchmark Checkpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Benchmark Checkpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#at-20-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        At 20 Hours
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#at-50-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        At 50 Hours
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#at-100-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        At 100 Hours
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#at-145-hours-dsa-115-system-design-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        At 145 Hours (DSA 115 + System Design 30)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-staying-on-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for Staying on Schedule
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checklists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklists
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice-diary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practice Diary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repositories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Repositories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/dsa" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/system-design" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/java-concurrency-spring" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/Spring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dsa-study-timeline-115-hours-total" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSA Study Timeline: 115 Hours Total
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSA Study Timeline: 115 Hours Total">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-foundations-0-35-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Foundations (0-35 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-dp-mastery-35-50-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: DP Mastery (35-50 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-advanced-50-85-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Advanced (50-85 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-practice-interview-prep-85-115-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Practice &amp; Interview Prep (85-115 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dsa-benchmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DSA Benchmarks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DSA Benchmarks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-per-problem-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time Per Problem Level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-per-problem-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality Per Problem Level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-curve-typical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning Curve (Typical)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-design-timeline-30-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Design Timeline: 30+ Hours
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Design Timeline: 30+ Hours">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-study-solutions-0-15-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Study Solutions (0-15 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-understand-theory-15-25-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Understand Theory (15-25 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-reverse-engineer-25-30-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Reverse Engineer (25-30 hours)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-interview-ready-30h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Interview Ready (30h+)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combined-study-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combined Study Schedule
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Combined Study Schedule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#month-1-dsa-foundations-system-design-intro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Month 1: DSA Foundations + System Design Intro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#month-2-dsa-dp-system-design-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Month 2: DSA DP + System Design Solutions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#month-3-dsa-advanced-system-design-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Month 3: DSA Advanced + System Design Theory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#month-4-dsa-practice-system-design-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Month 4: DSA Practice + System Design Practice
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benchmark-checkpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benchmark Checkpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Benchmark Checkpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#at-20-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        At 20 Hours
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#at-50-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        At 50 Hours
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#at-100-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        At 100 Hours
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#at-145-hours-dsa-115-system-design-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        At 145 Hours (DSA 115 + System Design 30)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-staying-on-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for Staying on Schedule
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="study-timelines-benchmarks">⏱️ Study Timelines &amp; Benchmarks</h1>
+<p>Based on "You Suck At Coding Interviews" guide recommendations.</p>
+<hr />
+<h2 id="dsa-study-timeline-115-hours-total">DSA Study Timeline: 115 Hours Total</h2>
+<h3 id="phase-1-foundations-0-35-hours">Phase 1: Foundations (0-35 hours)</h3>
+<p><strong>Material:</strong> Grokking patterns course (skip DP for now)<br />
+<strong>Goal:</strong> Master 80%+ of patterns</p>
+<table>
+<thead>
+<tr>
+<th>Hours</th>
+<th>Check-in</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5h</td>
+<td>Getting started</td>
+<td>Completed: 2-3 pattern types</td>
+</tr>
+<tr>
+<td>10h</td>
+<td>Foundations</td>
+<td>Easy problems &lt; 15 min</td>
+</tr>
+<tr>
+<td>20h</td>
+<td>Pattern lock-in</td>
+<td>Easy problems &lt; 10 min</td>
+</tr>
+<tr>
+<td>30h</td>
+<td>Flow state</td>
+<td>Medium problems possible</td>
+</tr>
+<tr>
+<td>35h</td>
+<td>Checkpoint</td>
+<td>60% of Grokking complete</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What You Can Do:</strong>
+- [ ] Identify pattern from problem name
+- [ ] Write multiple approaches
+- [ ] Trace through examples on paper
+- [ ] Explain preconditions</p>
+<p><strong>Red Flags:</strong>
+- ❌ Still writing brute force after 10h
+- ❌ Can't explain why pattern works
+- ❌ Learning new pattern seeps into old</p>
+<hr />
+<h3 id="phase-2-dp-mastery-35-50-hours">Phase 2: DP Mastery (35-50 hours)</h3>
+<p><strong>Material:</strong> Grokking DP course<br />
+<strong>Goal:</strong> Can solve DP problems independently</p>
+<table>
+<thead>
+<tr>
+<th>Hours</th>
+<th>Check-in</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>35h</td>
+<td>DP start</td>
+<td>Understand top-down approach</td>
+</tr>
+<tr>
+<td>40h</td>
+<td>Mid-phase</td>
+<td>Can build memoization table</td>
+</tr>
+<tr>
+<td>45h</td>
+<td>Near end</td>
+<td>Can solve 70% of medium DP</td>
+</tr>
+<tr>
+<td>50h</td>
+<td>Complete</td>
+<td>DP patterns mastered</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why Separate:</strong> DP conceptually different, needs focus</p>
+<p><strong>What You Can Do:</strong>
+- [ ] Identify overlapping subproblems
+- [ ] Build recurrence relation
+- [ ] Choose top-down vs bottom-up
+- [ ] Optimize space</p>
+<p><strong>Red Flags:</strong>
+- ❌ Still looking at solutions after 40h
+- ❌ Code works but can't explain why
+- ❌ Memoization table approach fuzzy</p>
+<hr />
+<h3 id="phase-3-advanced-50-85-hours">Phase 3: Advanced (50-85 hours)</h3>
+<p><strong>Material:</strong> EPI chapters 5-16 + LeetCode medium<br />
+<strong>Goal:</strong> All problems solvable (speed may vary)</p>
+<table>
+<thead>
+<tr>
+<th>Hours</th>
+<th>Check-in</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50h</td>
+<td>2/3 done</td>
+<td>All patterns understood</td>
+</tr>
+<tr>
+<td>60h</td>
+<td>70% there</td>
+<td>Most mediums solvable</td>
+</tr>
+<tr>
+<td>70h</td>
+<td>80% there</td>
+<td>Hard problems attempted</td>
+</tr>
+<tr>
+<td>80h</td>
+<td>Near ready</td>
+<td>Mostly consistent</td>
+</tr>
+<tr>
+<td>85h</td>
+<td>Checkpoint</td>
+<td>Ready for practice phase</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What You Can Do:</strong>
+- [ ] Solve any medium problem given unlimited time
+- [ ] Identify pattern quickly
+- [ ] Only stuck on implementation details</p>
+<p><strong>Red Flags:</strong>
+- ❌ Still forgetting patterns
+- ❌ Can't solve 50% of mediums
+- ❌ Solution time unpredictable (20-60 min variance)</p>
+<hr />
+<h3 id="phase-4-practice-interview-prep-85-115-hours">Phase 4: Practice &amp; Interview Prep (85-115 hours)</h3>
+<p><strong>Material:</strong> LeetCode mediums/hards mixed<br />
+<strong>Goal:</strong> Interview-ready consistency</p>
+<table>
+<thead>
+<tr>
+<th>Hours</th>
+<th>Check-in</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>85h</td>
+<td>Start</td>
+<td>Solve random 10 problems</td>
+</tr>
+<tr>
+<td>95h</td>
+<td>10% done</td>
+<td>70% success on first try</td>
+</tr>
+<tr>
+<td>100h</td>
+<td>20% done</td>
+<td>All solvable in &lt; 30 min</td>
+</tr>
+<tr>
+<td>105h</td>
+<td>30% done</td>
+<td>Behavioral + technical ready</td>
+</tr>
+<tr>
+<td>110h</td>
+<td>40% done</td>
+<td>Mock interviews clean</td>
+</tr>
+<tr>
+<td>115h</td>
+<td>Complete</td>
+<td>Interview ready</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What You Can Do:</strong>
+- [ ] Solve 70% of random problems first try
+- [ ] Speed: easy &lt; 5 min, medium &lt; 20 min
+- [ ] Explain solution clearly
+- [ ] Handle follow-up questions</p>
+<p><strong>Red Flags:</strong>
+- ❌ Still making same mistakes
+- ❌ Solution time increasing
+- ❌ Confidence decreasing</p>
+<hr />
+<h2 id="dsa-benchmarks">DSA Benchmarks</h2>
+<h3 id="time-per-problem-level">Time Per Problem Level</h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>20h Benchmark</th>
+<th>50h Benchmark</th>
+<th>100h Benchmark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Easy</strong></td>
+<td>10-15 min</td>
+<td>5-10 min</td>
+<td>2-5 min</td>
+</tr>
+<tr>
+<td><strong>Medium</strong></td>
+<td>30-45 min</td>
+<td>15-25 min</td>
+<td>8-15 min</td>
+</tr>
+<tr>
+<td><strong>Hard</strong></td>
+<td>60+ min</td>
+<td>30-45 min</td>
+<td>20-35 min</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quality-per-problem-level">Quality Per Problem Level</h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Bugs at 20h</th>
+<th>Bugs at 50h</th>
+<th>Bugs at 100h</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Easy</strong></td>
+<td>20-30%</td>
+<td>5-10%</td>
+<td>0-2%</td>
+</tr>
+<tr>
+<td><strong>Medium</strong></td>
+<td>30-40%</td>
+<td>10-15%</td>
+<td>2-5%</td>
+</tr>
+<tr>
+<td><strong>Hard</strong></td>
+<td>50-60%</td>
+<td>25-35%</td>
+<td>10-15%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="learning-curve-typical">Learning Curve (Typical)</h3>
+<pre><code>Error Rate %
+|
+100 |●                      (Starting - lots of bugs)
+    | ●
+ 80 |  ●
+    |   ●
+ 60 |    ●●                (Fast learning 5-20h)
+    |      ●
+ 40 |       ●
+    |        ●●            (Plateau 30-50h)
+ 20 |          ●●●
+    |             ●●●●●    (Slow improvement 70-100h)
+  0 |___________________●●
+    0   20   40   60   80  100 Hours
+</code></pre>
+<p><strong>Interpretation:</strong>
+- 0-15h: Rapid learning (steep drop)
+- 15-50h: Consolidation (gradual drop)
+- 50-100h: Refinement (slow drop to expert)</p>
+<hr />
+<h2 id="system-design-timeline-30-hours">System Design Timeline: 30+ Hours</h2>
+<h3 id="phase-1-study-solutions-0-15-hours">Phase 1: Study Solutions (0-15 hours)</h3>
+<p><strong>Material:</strong> Grokking System Design interview course (5-10 case studies)<br />
+<strong>Goal:</strong> Learn patterns</p>
+<table>
+<thead>
+<tr>
+<th>Hours</th>
+<th>Case Studies</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3h</td>
+<td>1 (URL Shortener)</td>
+<td>Understand HLD/LLD structure</td>
+</tr>
+<tr>
+<td>6h</td>
+<td>2 (Twitter)</td>
+<td>See pattern: API → workers → DB</td>
+</tr>
+<tr>
+<td>9h</td>
+<td>3 (YouTube)</td>
+<td>Understand caching strategy</td>
+</tr>
+<tr>
+<td>12h</td>
+<td>4 (Uber real-time)</td>
+<td>Understand WebSocket patterns</td>
+</tr>
+<tr>
+<td>15h</td>
+<td>5+ (Your choice)</td>
+<td>Pattern recognition locked in</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What You Learn:</strong>
+- HLD (High-level design) components
+- LLD (Low-level design) code patterns
+- Tradeoff thinking
+- Capacity calculations</p>
+<p><strong>Red Flags:</strong>
+- ❌ Just copying Grokking solutions
+- ❌ Can't explain why choice was made
+- ❌ Can't calculate capacity yourself</p>
+<hr />
+<h3 id="phase-2-understand-theory-15-25-hours">Phase 2: Understand Theory (15-25 hours)</h3>
+<p><strong>Material:</strong> DDIA (Designing Data-Intensive Applications) key chapters<br />
+<strong>Goal:</strong> Understand WHY</p>
+<table>
+<thead>
+<tr>
+<th>Hours</th>
+<th>Reading</th>
+<th>Deep Dive</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2h</td>
+<td>Ch 5: Replication</td>
+<td>Multi-master, consistency models</td>
+</tr>
+<tr>
+<td>2h</td>
+<td>Ch 6: Partitioning</td>
+<td>Sharding strategies, rebalancing</td>
+</tr>
+<tr>
+<td>2h</td>
+<td>Ch 9: Consistency &amp; Consensus</td>
+<td>CAP theorem, algorithms</td>
+</tr>
+<tr>
+<td>2h</td>
+<td>Ch 11: Stream Processing</td>
+<td>Events, message queues</td>
+</tr>
+<tr>
+<td>2h</td>
+<td>Review + Synthesis</td>
+<td>Connect theory to case studies</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What You Learn:</strong>
+- WHY replication? (High availability, read scaling)
+- Consistency models (strong, eventual, causal)
+- Sharding strategies (hash, range, directory)
+- Failure modes and recovery</p>
+<p><strong>Red Flags:</strong>
+- ❌ Too abstract, can't connect to systems
+- ❌ Only reading, not annotating</p>
+<hr />
+<h3 id="phase-3-reverse-engineer-25-30-hours">Phase 3: Reverse Engineer (25-30 hours)</h3>
+<p><strong>Material:</strong> Design similar systems without reading solutions<br />
+<strong>Goal:</strong> Can apply independently</p>
+<table>
+<thead>
+<tr>
+<th>Hours</th>
+<th>Exercise</th>
+<th>Difficulty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2h</td>
+<td>Design URL Shortener</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>2h</td>
+<td>Design Twitter</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>2h</td>
+<td>Design YouTube</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>1h</td>
+<td>Design Messaging</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>2h</td>
+<td>Design Rate Limiter</td>
+<td>Easy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Your Approach:</strong>
+1. Design in text/whiteboard (no peeking)
+2. Write down: requirements, capacity, HLD, LLD
+3. Compare to reference solutions
+4. 50% match? You understand core
+5. 80%+ match? You're ready for interviews</p>
+<p><strong>Red Flags:</strong>
+- ❌ Can't complete without help
+- ❌ Designs completely different from reference
+- ❌ Missing capacity calculations</p>
+<hr />
+<h3 id="phase-4-interview-ready-30h">Phase 4: Interview Ready (30h+)</h3>
+<p><strong>Material:</strong> Mock interviews, follow-up questions<br />
+<strong>Goal:</strong> Handle real interviews</p>
+<table>
+<thead>
+<tr>
+<th>Hours</th>
+<th>Activity</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-3h</td>
+<td>Full mock interview</td>
+<td>Time pressure, clarity</td>
+</tr>
+<tr>
+<td>1h</td>
+<td>Feedback review</td>
+<td>Identify weak areas</td>
+</tr>
+<tr>
+<td>1h</td>
+<td>Targeted study</td>
+<td>Fix weak areas</td>
+</tr>
+<tr>
+<td>Repeat</td>
+<td>Going forward</td>
+<td>2-3 mocks/week</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What Success Looks Like:</strong>
+- [ ] Latency SLA defined within 1 min
+- [ ] Capacity calculated without mistakes
+- [ ] HLD clear, all components justified
+- [ ] Tradeoffs explicit
+- [ ] Failure scenarios identified
+- [ ] Can defend every choice</p>
+<hr />
+<h2 id="combined-study-schedule">Combined Study Schedule</h2>
+<h3 id="month-1-dsa-foundations-system-design-intro">Month 1: DSA Foundations + System Design Intro</h3>
+<pre><code>Week 1-2: DSA Phase 1 (0-15h)
+Week 3-4: DSA Phase 1 (15-35h) + System Design Phase 1 start (0h)
+</code></pre>
+<h3 id="month-2-dsa-dp-system-design-solutions">Month 2: DSA DP + System Design Solutions</h3>
+<pre><code>Week 1: DSA Phase 2 (35-42h)
+Week 2: DSA Phase 2 (42-50h)
+Week 3-4: DSA Phase 3 start (50-60h) + System Design Phase 1 complete (15h)
+</code></pre>
+<h3 id="month-3-dsa-advanced-system-design-theory">Month 3: DSA Advanced + System Design Theory</h3>
+<pre><code>Week 1-2: DSA Phase 3 (60-75h)
+Week 3: DSA Phase 3 (75-85h) + System Design Phase 2 (20-25h)
+Week 4: DSA Phase 4 start (85+) + System Design Phase 2 complete (25h)
+</code></pre>
+<h3 id="month-4-dsa-practice-system-design-practice">Month 4: DSA Practice + System Design Practice</h3>
+<pre><code>Ongoing: DSA Phase 4 (85-115h) + System Design Phase 3-4 (25-30h+)
+2-3 mock DSA interviews/week
+1-2 mock System Design interviews/week
+</code></pre>
+<hr />
+<h2 id="benchmark-checkpoints">Benchmark Checkpoints</h2>
+<h3 id="at-20-hours">At 20 Hours</h3>
+<ul>
+<li>[ ] DSA: Completed 20% of Grokking</li>
+<li>[ ] Easy problems &lt; 10-15 min</li>
+<li>[ ] Can explain 3 patterns clearly</li>
+<li>[ ] System Design: Not started (OK)</li>
+</ul>
+<h3 id="at-50-hours">At 50 Hours</h3>
+<ul>
+<li>[ ] DSA: Completed 50% of Grokking + EPI start</li>
+<li>[ ] Medium problems 15-25 min</li>
+<li>[ ] Can solve 80% first attempt</li>
+<li>[ ] System Design: Completed 1-2 case studies</li>
+</ul>
+<h3 id="at-100-hours">At 100 Hours</h3>
+<ul>
+<li>[ ] DSA: 85+ hours complete, interview ready</li>
+<li>[ ] Can solve 70% of 20 random problems first try</li>
+<li>[ ] Speed consistent, few bugs</li>
+<li>[ ] System Design: 2-3 case studies, theory started</li>
+</ul>
+<h3 id="at-145-hours-dsa-115-system-design-30">At 145 Hours (DSA 115 + System Design 30)</h3>
+<ul>
+<li>[ ] DSA: Interview ready ✅</li>
+<li>[ ] System Design: Interview ready ✅</li>
+<li>[ ] Mock interviews going well</li>
+<li>[ ] Behavioral prep next</li>
+</ul>
+<hr />
+<h2 id="tips-for-staying-on-schedule">Tips for Staying on Schedule</h2>
+<ol>
+<li><strong>Track daily:</strong> Log hours, problems solved, mistakes</li>
+<li><strong>Adjust weekly:</strong> Behind? Add 5h next week</li>
+<li><strong>Red flags:</strong> If behind at checkpoint, redo that phase</li>
+<li><strong>Don't rush:</strong> Better to add weeks than skip depth</li>
+</ol>
+<hr />
+<p><strong>Next Step:</strong> See <a href="../checklists/">Interview Checklists</a> to verify readiness &gt;&gt;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

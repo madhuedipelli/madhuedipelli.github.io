@@ -1,0 +1,1417 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Complete SDE interview prep with DSA, System Design, and interview guide insights">
+      
+      
+        <meta name="author" content="Madhu Edipelli">
+      
+      
+      
+        <link rel="prev" href="../checklists/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Practice Diary - SDE Interview Prep 2026</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#practice-diary-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SDE Interview Prep 2026" class="md-header__button md-logo" aria-label="SDE Interview Prep 2026" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SDE Interview Prep 2026
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Practice Diary
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/madhuedipelli" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SDE Interview Prep 2026" class="md-nav__button md-logo" aria-label="SDE Interview Prep 2026" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SDE Interview Prep 2026
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/madhuedipelli" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interview Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dsa-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-design-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Timelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checklists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklists
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practice Diary
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practice Diary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-practice-diary-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Practice Diary Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-practice-diary-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Practice Diary Template
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Practice Diary Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optimal-hash-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimal (Hash Map)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mistakes-made" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mistakes Made
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mistakes Made">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mistake-1-off-by-one-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mistake 1: Off-by-One Index
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mistake-2-didnt-check-edge-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mistake 2: Didn't Check Edge Case
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Chain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-trace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Trace
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Insights
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#similar-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Similar Problems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-follow-ups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Follow-ups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-for-future" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lessons for Future
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repositories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Repositories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/dsa" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/system-design" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/madhuedipelli/java-concurrency-spring" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/Spring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-practice-diary-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Practice Diary Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-practice-diary-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Practice Diary Template
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Practice Diary Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optimal-hash-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimal (Hash Map)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mistakes-made" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mistakes Made
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mistakes Made">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mistake-1-off-by-one-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mistake 1: Off-by-One Index
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mistake-2-didnt-check-edge-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mistake 2: Didn't Check Edge Case
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision Chain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-trace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Trace
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Insights
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#similar-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Similar Problems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-follow-ups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Follow-ups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-for-future" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lessons for Future
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="practice-diary-guide">📝 Practice Diary Guide</h1>
+<p>The practice diary is <strong>MANDATORY</strong> - it's the difference between solving 100 problems and LEARNING from them.</p>
+<hr />
+<h2 id="why-practice-diary-matters">Why Practice Diary Matters</h2>
+<p><strong>Statistic from interview guide:</strong> Candidates who keep practice diaries:
+- 70% improve in consistency over time
+- 50% catch recurring mistake patterns
+- Rarely repeat same mistake twice</p>
+<p><strong>Candidates without practice diary:</strong>
+- 20% improvement rate
+- Repeat same mistakes 3-5 times
+- Hit plateau at 50-60h mark</p>
+<hr />
+<h2 id="the-practice-diary-template">The Practice Diary Template</h2>
+<p>Create one markdown file per problem. Example: <code>2025-02-15-two-sum.md</code></p>
+<pre><code class="language-markdown"># Two Sum
+
+**Date:** February 15, 2026  
+**Time Spent:** 28 minutes  
+**Result:** ✅ Passed / ⚠️ Partial / ❌ Failed  
+**Attempt:** 1st attempt / 2nd attempt / 3rd attempt  
+
+## Problem Statement
+Two integers in array sum to target, return indices
+
+## Approach
+- Naive: O(n²) brute force
+- Optimal: O(n) hash map - single pass
+
+## Solution
+
+### Brute Force (Baseline)
+```python
+def twoSum(nums, target):
+    for i in range(len(nums)):
+        for j in range(i+1, len(nums)):
+            if nums[i] + nums[j] == target:
+                return [i, j]
+    return []
+</code></pre>
+<p><strong>Complexity:</strong> O(n²) time, O(1) space</p>
+<h3 id="optimal-hash-map">Optimal (Hash Map)</h3>
+<pre><code class="language-python">def twoSum(nums, target):
+    seen = {}
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in seen:
+            return [seen[complement], i]
+        seen[num] = i
+    return []
+</code></pre>
+<p><strong>Complexity:</strong> O(n) time, O(n) space</p>
+<h2 id="mistakes-made">Mistakes Made</h2>
+<h3 id="mistake-1-off-by-one-index">Mistake 1: Off-by-One Index</h3>
+<p><strong>What I Did:</strong> Returned <code>[i, j]</code> after loop, wrong indices<br />
+<strong>Why:</strong> Forgot to store index while building map<br />
+<strong>Cost:</strong> 5 minutes debugging<br />
+<strong>Prevention:</strong> "Always store index IN the dictionary iteration"</p>
+<h3 id="mistake-2-didnt-check-edge-case">Mistake 2: Didn't Check Edge Case</h3>
+<p><strong>What I Did:</strong> Assumed array always has solution<br />
+<strong>Why:</strong> Problem didn't explicitly say "always has answer"<br />
+<strong>Cost:</strong> Would fail on empty array<br />
+<strong>Prevention:</strong> "Read problem for edge cases BEFORE coding"</p>
+<h2 id="decision-chain">Decision Chain</h2>
+<pre><code>Start → &quot;Two numbers sum to target?&quot;
+     → &quot;Naive: brute force O(n²)&quot; ✓ Understood
+     → &quot;Optimal: speed up lookup?&quot; 
+     → &quot;Use hash map for O(1) lookup&quot; ✓ Right
+     → &quot;Store num➜index mapping&quot; ✓ Right
+     → &quot;Check complement exists BEFORE storing&quot; ⚠️ Tricky
+     → &quot;Finally: handle no solution edge case&quot; ✓ Right
+</code></pre>
+<p><strong>Key Decision Point:</strong> Check complement BEFORE storing (order matters!)</p>
+<h2 id="testing-trace">Testing Trace</h2>
+<pre><code>Input: [2, 7, 11, 15], target = 9
+
+Iteration 1: num=2, complement=7, seen={}, store: seen[2]=0
+Iteration 2: num=7, complement=2, seen[2] exists! Return [0, 1] ✓
+
+Input: [1,1,1], target = 3
+Iteration 1: num=1, complement=2, seen={}, store: seen[1]=0
+Iteration 2: num=1, complement=2, seen={1}, store: seen[1]=1
+Iteration 3: num=1, complement=2, seen={1}, store: seen[1]=2
+Return [] ✓ Edge case handled
+</code></pre>
+<h2 id="key-insights">Key Insights</h2>
+<ol>
+<li>
+<p><strong>Precondition for one-pass hash map:</strong> 
+   Need to store value→index, check OTHER value existed previously</p>
+</li>
+<li>
+<p><strong>Why this matters:</strong> 
+   Two-pass (build map, then search) is safer but slower</p>
+</li>
+<li>
+<p><strong>Pattern recognition:</strong> 
+   Any problem where "lookup value" = "search previous results" → hash map works</p>
+</li>
+</ol>
+<h2 id="similar-problems">Similar Problems</h2>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Similarity</th>
+<th>Why Different</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3Sum</td>
+<td>Similar: find targets</td>
+<td>Harder: 3 values, still use hashes</td>
+</tr>
+<tr>
+<td>Two Sum II</td>
+<td>Similar: find pair</td>
+<td>Different: array pre-sorted (use two pointers!)</td>
+</tr>
+<tr>
+<td>Closest Sum</td>
+<td>Similar: hash map</td>
+<td>Harder: need closest, not exact</td>
+</tr>
+</tbody>
+</table>
+<h2 id="related-follow-ups">Related Follow-ups</h2>
+<p><strong>Interviewer might ask:</strong>
+1. "What if we need ALL pairs?" → O(n) still works, store list
+2. "What if there are duplicates?" → Edge case traced ✓
+3. "What if array is sorted?" → Could use two-pointers O(n) but use hashes OK
+4. "What about space constraints?" → Trade O(n) space vs O(n²) time</p>
+<h2 id="time-analysis">Time Analysis</h2>
+<ul>
+<li><strong>Thinking:</strong> 2 min (understood problem)</li>
+<li><strong>Naive:</strong> 3 min (wrote brute force)</li>
+<li><strong>Optimal:</strong> 5 min (thought about hash map)</li>
+<li><strong>Coding:</strong> 12 min (wrote solution)</li>
+<li><strong>Testing:</strong> 6 min (traced examples)</li>
+<li><strong>Total:</strong> 28 min</li>
+</ul>
+<p><strong>Speed Assessment:</strong>
+- 28 min = slow for easy problem (target 5-10 min)
+- After 20h practice: should be 5 min
+- After 50h practice: should be 2 min
+- Track this to ensure improvement</p>
+<h2 id="lessons-for-future">Lessons for Future</h2>
+<p>✅ Do:
+- Hash map for "lookup" problems
+- Store metadata (indices) not just keys
+- Check edge cases on paper first
+- Trace through examples methodically</p>
+<p>❌ Avoid:
+- Assuming array always has solution
+- Off-by-one errors in index storage
+- Coding without tracing first</p>
+<hr />
+<h1 id="repeat-this-format-for-every-problem">[REPEAT THIS FORMAT FOR EVERY PROBLEM]</h1>
+<pre><code>
+---
+
+## How to Use the Template
+
+### For Every Problem:
+
+1. **Date &amp; Time:** Track when you solved it, how long
+2. **Problem Statement:** 1-line summary
+3. **Approach:** Naive AND optimal (always compare)
+4. **Solution:** Code both, with complexity analysis
+5. **Mistakes:** THIS IS KEY
+   - What did you do wrong?
+   - WHY did you do it? (root cause)
+   - How much time did it cost?
+   - How will you prevent next time?
+6. **Decision Chain:** Show your thinking path
+7. **Testing:** Trace on paper for 2-3 examples
+8. **Key Insights:** What pattern/precondition unlocked this?
+9. **Similar Problems:** Link to related problems
+10. **Follow-ups:** What would interviewer likely ask?
+
+### Optional But Helpful:
+
+- **Comparison to Reference:** How did your solution compare?
+- **Lessons:** General takeaways for future problems
+- **Confidence Level:** 1-10 how confident you are in this solution
+- **Repeat Date:** If you solve this again, note the date and compare
+
+---
+
+## What Makes a Good Practice Diary Entry
+
+### ✅ GOOD
+```markdown
+**Mistakes:**
+1. Tried to optimize immediately
+   - Why: Wanted to show off
+   - Root cause: Overconfidence
+   - Cost: 10 minutes, then realized naive was clearer
+   - Prevention: &quot;Write naive first, let interviewer suggest optimization&quot;
+</code></pre>
+<h3 id="bad">❌ BAD</h3>
+<pre><code class="language-markdown">**Mistakes:**
+1. Forgot to handle NULL
+</code></pre>
+<p>^ Too vague! Doesn't prevent future mistake</p>
+<h3 id="good">✅ GOOD</h3>
+<pre><code class="language-markdown">**Decision Chain:**
+Start → &quot;Two numbers?&quot; → &quot;Use hash map?&quot; → &quot;Store num➜index&quot; → Check complement BEFORE store ✓
+</code></pre>
+<h3 id="bad_1">❌ BAD</h3>
+<pre><code class="language-markdown">**Decision Chain:**
+Used hash map and it worked
+</code></pre>
+<p>^ No insight into your thinking</p>
+<hr />
+<h2 id="sample-weekly-review">Sample Weekly Review</h2>
+<p>Every 5 problems, review your diary:</p>
+<pre><code class="language-markdown"># Weekly Review: Feb 15-22
+
+## Problems Solved
+1. Two Sum - ✅ 28 min (slow but understood)
+2. Valid Parentheses - ✅ 12 min (stack easy)
+3. Longest Substring - ⚠️ 45 min (sliding window tricky)
+4. Merge Intervals - ✅ 18 min (good)
+5. Binary Search - ✅ 10 min (sorted prerequisite!)
+
+## Recurring Mistakes
+❌ Forgetting to check edge cases first (2 out of 5)
+❌ Optimizing before ensuring naive works (1 out of 5)
+✅ Improving: Tracing on paper first (helped 4 out of 5)
+
+## Pattern Confusions
+- Sliding window: Need to understand &quot;can reuse?&quot; precondition
+- Two pointers: When? Requires sorted OR two ends
+
+## Next Week Focus
+1. Sliding window: Do 3 more problems, each time verify precondition
+2. Binary search: Do 2 more, understand sorted requirement
+3. Maintain: Paper trace EVERY problem (working well)
+
+## Time Trends
+| Problem Count | Avg Time | Status |
+|---|---|---|
+| 1-5 | 22.6 min | Slow (target 10-15) |
+| Next goal | 15 min | Need 30% speed up |
+</code></pre>
+<hr />
+<h2 id="how-to-organize-your-diary">How to Organize Your Diary</h2>
+<h3 id="structure">Structure</h3>
+<pre><code>practice-diary/
+├── 2026-02-15-two-sum.md
+├── 2026-02-15-valid-parentheses.md
+├── 2026-02-16-longest-substring.md
+├── WEEKLY-REVIEW-2026-02-15.md
+├── MONTHLY-REVIEW-2026-02.md
+└── PATTERNS.md (index of all patterns learned)
+</code></pre>
+<h3 id="pattern-index-example">Pattern Index Example</h3>
+<pre><code class="language-markdown"># Pattern Index
+
+## Hash Map Problems
+- Two Sum (✅ 28 min)
+- Valid Anagram (✅ 15 min)
+- Group Anagrams (⚠️ 42 min - review)
+
+## Sliding Window Problems  
+- Longest Substring (⚠️ 45 min - precondition unclear)
+- Max Sum Subarray (✅ 12 min)
+
+[etc...]
+</code></pre>
+<hr />
+<h2 id="common-patterns-to-track">Common Patterns to Track</h2>
+<p>As you go through problems, note patterns in your diary:</p>
+<h3 id="pattern-hash-map-for-lookup">Pattern: Hash Map for Lookup</h3>
+<pre><code>When to use:
+- &quot;Find X in array where property Y&quot;
+- &quot;Complement lookup&quot;
+- &quot;Count frequencies&quot;
+
+Key insight:
+- Store key➜value while iterating
+- Lookup = previous element met condition
+</code></pre>
+<h3 id="pattern-sliding-window">Pattern: Sliding Window</h3>
+<pre><code>When to use:
+- Subarray/substring problems
+- When can reuse portion of result
+
+Precondition:
+- &quot;Are we adding/removing ends?&quot;
+- &quot;Is previous result relevant?&quot;
+</code></pre>
+<h3 id="pattern-two-pointers">Pattern: Two Pointers</h3>
+<pre><code>When to use:
+- Sorted array
+- Find pair with constraint
+- Container with most water
+
+Precondition:
+- Array must be sorted
+- Working from both ends
+</code></pre>
+<hr />
+<h2 id="practice-diary-metrics-to-track">Practice Diary Metrics to Track</h2>
+<h3 id="weekly-metrics">Weekly Metrics</h3>
+<ul>
+<li>[ ] Problems solved this week: ___</li>
+<li>[ ] Average time: ___</li>
+<li>[ ] Success rate (first try): ___%</li>
+<li>[ ] Bug rate: ___%</li>
+</ul>
+<h3 id="progress-tracking-template">Progress Tracking Template</h3>
+<pre><code>Week 1 (Feb 15-21):
+- Problems: 5
+- Avg time: 22.6 min
+- Success: 80% (4/5 first try)
+- Bugs: 40% (2/5 had bugs)
+
+Week 2 (Feb 22-28):
+- Problems: 8
+- Avg time: 18.2 min ← Improving!
+- Success: 87.5% (7/8 first try) ← Improving!
+- Bugs: 25% (2/8 had bugs) ← Improving!
+</code></pre>
+<hr />
+<h2 id="red-flags-in-your-diary">Red Flags in Your Diary</h2>
+<h3 id="stop-if-you-see">🚨 Stop if You See:</h3>
+<ul>
+<li>Same mistake appearing 3+ times → You didn't learn</li>
+<li>Time increasing or flat → Not improving speed</li>
+<li>Zero testing → Will fail edge cases</li>
+<li>No root cause analysis → Wasting diary time</li>
+<li>Solutions look memorized (not your own words) → Memorization trap</li>
+</ul>
+<h3 id="good-signs">✅ Good Signs:</h3>
+<ul>
+<li>Mistakes decreasing week-over-week</li>
+<li>Time improving (faster and fewer bugs)</li>
+<li>Always testing on paper first</li>
+<li>Can explain preconditions</li>
+<li>Similar problems instantly recognizable</li>
+</ul>
+<hr />
+<h2 id="how-to-git-commit-your-diary">How to Git Commit Your Diary</h2>
+<pre><code class="language-bash"># After completing a problem
+cd d:/dsa
+git add practice-diary/2026-02-15-two-sum.md
+git commit -m &quot;Add: Two Sum practice diary (28 min, hash map pattern)&quot;
+git push origin main
+
+# Weekly review
+git add practice-diary/WEEKLY-REVIEW-2026-02-15.md
+git commit -m &quot;Review: Week 1 - 5 problems, patterns index updated&quot;
+git push origin main
+</code></pre>
+<p>Your GitHub will show your learning progress over time! This is impressive for interviews too.</p>
+<hr />
+<p><strong>The bottom line:</strong> Practice diary separates successful interview prep from wasted hours.</p>
+<p><strong>Not keeping one?</strong> You're repeating mistakes and not learning patterns.</p>
+<p><strong>Keeping one?</strong> Every problem teaches you something new, repeated mistakes disappear, confidence grows.</p>
+<p>💪 Keep the diary. It works.</p>
+<hr />
+<p><strong>Next:</strong> Ready to start? Head to your DSA repo and create your first practice diary entry!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
